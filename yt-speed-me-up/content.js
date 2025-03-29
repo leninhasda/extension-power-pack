@@ -1,16 +1,19 @@
 let videoPlayer = document.getElementsByTagName("video")[0]
+let rateOfChange = 0.25;
+let defaultSpeed = 1.0;
 
-document.addEventListener("keyup", (e) => {
+window.addEventListener("keyup", (e) => {
+    console.log(e.key, e.code);
     if(e.ctrlKey && e.key === "'") {
-        videoPlayer.playbackRate += .5
+        videoPlayer.playbackRate += rateOfChange;
         console.log("increased", videoPlayer.playbackRate);
     }
     else if(e.ctrlKey && e.key === ";") {
-        videoPlayer.playbackRate -= .5
+        videoPlayer.playbackRate -= rateOfChange;
         console.log("decreased", videoPlayer.playbackRate);
     }
     else if(e.ctrlKey && e.key === ".") {
-        videoPlayer.playbackRate = 1
+        videoPlayer.playbackRate = defaultSpeed;
         console.log("reset", videoPlayer.playbackRate);
     }
-});
+})

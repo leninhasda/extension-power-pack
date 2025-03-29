@@ -1,17 +1,14 @@
 {
     "manifest_version": 2,
-    "name": "brave-yt",
-    "version": "1.0",
-  
+    "name": "yt-speed-me-up",
+    "version": "1.0.0",
     "description": "Youtube Playspeed controller",
-  
     "icons": {
     },
-  
     "content_scripts": [
       {
         "matches": ["*://*.youtube.com/*"],
-        "js": ["brave-yt.js"]
+        "js": ["content.js"]
       }
     ]
   }
