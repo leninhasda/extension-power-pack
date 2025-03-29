@@ -1,7 +1,7 @@
-<center>
-  <img src="./icon-128.png">
+<div style="text-align: center">
+  <img " src="./icon-128.png">
   <h1>Gmail Shortcut PowerPack</h1>
-</center>
+</div>
 
 The missing shortcuts for Gmail.
 
