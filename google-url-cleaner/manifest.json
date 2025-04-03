@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "google-url-cleaner",
+    "version": "1.0.0",
+    "description": "Cleaning google url",
+    "icons": {
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.google.com/sorry/index*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
