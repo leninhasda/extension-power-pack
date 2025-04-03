@@ -4,15 +4,15 @@ let defaultSpeed = 1.0;
 
 window.addEventListener("keyup", (e) => {
     console.log(e.key, e.code);
-    if(e.ctrlKey && e.key === "'") {
+    if(e.ctrlKey && e.key === "'") { // speedup = CTRL + '
         videoPlayer.playbackRate += rateOfChange;
         console.log("increased", videoPlayer.playbackRate);
     }
-    else if(e.ctrlKey && e.key === ";") {
+    else if(e.ctrlKey && e.key === ";") { // slowdown == CTRL + ;
         videoPlayer.playbackRate -= rateOfChange;
         console.log("decreased", videoPlayer.playbackRate);
     }
-    else if(e.ctrlKey && e.key === ".") {
+    else if(e.ctrlKey && e.key === ".") { // reset = CTRL + .
         videoPlayer.playbackRate = defaultSpeed;
         console.log("reset", videoPlayer.playbackRate);
     }
